@@ -1,0 +1,11 @@
+usermin = int(input('Enter minimum number in range: '))
+usermax = int(input('Enter maximum number in range: '))
+answersfromrange = []
+
+for i in range(usermin, (usermax + 1)):
+    if i % 5 != 0:
+        answersfromrange.append(i)
+    for i in answersfromrange:
+        if i % 7 != 0:
+            answersfromrange.remove(i)
+        print('The numbers in the range are:', i)
